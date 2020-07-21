@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="#0000ff">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/signupImage"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupImage"
+        android:hint="Please Enter Your Email"
+        android:drawableRight="@drawable/email"
+        android:id="@+id/emailSignup"
+        android:background="#ff8000"
+        android:inputType="textEmailAddress"
+        android:ems="15"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailSignup"
+        android:hint="Please Enter Your Username"
+        android:drawableRight="@drawable/person"
+        android:id="@+id/usernameSIgnup"
+        android:background="#ff8000"
+        android:layout_marginTop="5dp"
+        android:ems="15"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameSIgnup"
+        android:hint="Please Enter Your Password"
+        android:drawableRight="@drawable/lock"
+        android:id="@+id/passwordSignup"
+        android:background="#ff8000"
+        android:layout_marginTop="5dp"
+        android:ems="15"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordSignup"
+        android:hint="Please Confirm Your Password"
+        android:drawableRight="@drawable/email"
+        android:id="@+id/confirmPassword"
+        android:background="#ff8000"
+        android:layout_marginTop="5dp"
+        android:ems="15"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmPassword"
+        android:text="Signup"
+        android:id="@+id/btnSignup"
+        android:background="#006633"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignup"
+        android:text="Login"
+        android:id="@+id/btnSwitchToLogin"
+        android:background="#006666"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
